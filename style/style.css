@@ -1,0 +1,11 @@
+@charset "UTF-8"; /* Caso uses seletores com elementos especiais! */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#app{
+    
+}
