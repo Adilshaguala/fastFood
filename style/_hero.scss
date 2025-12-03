@@ -1,18 +1,44 @@
-@use "variaveis";
-
-$cor_principal: #FFA600;
-$cor_secundaria: #000000;
-$cor_terceira: #303030;
+@use "index" as v;
 
 
+@keyframes clicaEmMinCriarConta {
+    0% {
+        transform: scaleX(1) translateY(0px);
+    }
 
-@mixin center{
-    align-items: center;
-    justify-content: center;
+    100% {
+        transform: scaleX(1.1) translateY(-18px) rotateZ(-10deg);
+
+    }
+}
+
+@keyframes clicaEmMinEntrar {
+    0% {
+        transform: scaleX(1);
+    }
+
+    80% {
+        transform: scaleX(1.1) scaleY(1);
+
+    }
+
+    90% {
+        transform: scaleX(1) scaleY(1.1);
+    }
+
+    100% {
+        transform: scaleX(1.1) scaleY(1);
+    }
 }
 
 
-.hero{    
+
+
+
+
+
+
+.hero {
     background-image: url("/public/_hero.png");
     padding: 20px;
     gap: 20px;
@@ -21,17 +47,19 @@ $cor_terceira: #303030;
     background-position: center;
     background-size: cover;
     background-repeat: none;
+    @include v.center;
 
     color: white;
-    .redesSociais{
-        ul{
+
+    .redesSociais {
+        ul {
             display: flex;
-            @include center();
             gap: 20px;
 
-            li{
+            li {
                 list-style: none;
-                a{
+
+                a {
                     text-decoration: none;
                     color: white;
                     font-size: 48px;
@@ -39,40 +67,50 @@ $cor_terceira: #303030;
             }
         }
     }
-    .textHero{
+
+    .textHero {
         flex-grow: 1;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         padding: 20px;
-        h1{
+
+        h1 {
             font-size: 56px;
         }
-        
-        .heroLink{
+
+        .heroLink {
             text-decoration: none;
             font-size: 18px;
             font-weight: 600;
             border-radius: 10px;
         }
-        .heroLinkCriar{
-            background-color: $cor_principal;
+
+        .heroLinkCriar {
+            background-color: v.$cor_principal;
             color: white;
             padding: 10px;
+            animation: clicaEmMinCriarConta 1s infinite alternate ease-in-out;
+
+
         }
-        .heroLinkEntrar{
+
+        .heroLinkEntrar {
             border: white 2px solid;
-            color: $cor_principal;
+            color: v.$cor_principal;
             padding: 10px;
+            animation: clicaEmMinEntrar 1s infinite alternate;
+
         }
-        .heroButoes{
+
+        .heroButoes {
             display: flex;
-            gap:15px;
+
+            gap: 15px;
         }
 
     }
-    
+
 
 }
-

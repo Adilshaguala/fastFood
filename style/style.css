@@ -1,3 +1,25 @@
+@keyframes clicaEmMinCriarConta {
+  0% {
+    transform: scaleX(1) translateY(0px);
+  }
+  100% {
+    transform: scaleX(1.1) translateY(-18px) rotateZ(-10deg);
+  }
+}
+@keyframes clicaEmMinEntrar {
+  0% {
+    transform: scaleX(1);
+  }
+  80% {
+    transform: scaleX(1.1) scaleY(1);
+  }
+  90% {
+    transform: scaleX(1) scaleY(1.1);
+  }
+  100% {
+    transform: scaleX(1.1) scaleY(1);
+  }
+}
 .hero {
   background-image: url("/public/_hero.png");
   padding: 20px;
@@ -7,12 +29,13 @@
   background-position: center;
   background-size: cover;
   background-repeat: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
 .hero .redesSociais ul {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
 }
 .hero .redesSociais ul li {
@@ -44,15 +67,102 @@
   background-color: #FFA600;
   color: white;
   padding: 10px;
+  animation: clicaEmMinCriarConta 1s infinite alternate ease-in-out;
 }
 .hero .textHero .heroLinkEntrar {
   border: white 2px solid;
   color: #FFA600;
   padding: 10px;
+  animation: clicaEmMinEntrar 1s infinite alternate;
 }
 .hero .textHero .heroButoes {
   display: flex;
   gap: 15px;
+}
+
+section.sobre {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.sobre .imgSobre img {
+  width: 550px;
+}
+section.sobre .textSobre {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section.SectionParceiros .textoParceiros {
+  text-align: center;
+}
+section.SectionParceiros .imgParceiros {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section.SectionParceiros .imgParceiros .logoParceiros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.SectionParceiros .imgParceiros .logoParceiros .imgLogosParceiros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.SectionParceiros .imgParceiros .logoParceiros .imgLogosParceiros img {
+  width: 150px;
+}
+section.SectionParceiros .imgParceiros .barnerParceiros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+section.SectionParceiros .imgParceiros .barnerParceiros .imgBarnerParceiros img {
+  width: 250px;
+}
+
+section.SectionComentarios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+section.SectionComentarios .textoParceiros {
+  text-align: center;
+}
+section.SectionComentarios .divComentarios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+section.SectionComentarios .divComentarios article {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border: 2px rgba(0, 0, 0, 0.0823529412) solid;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.048);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.SectionComentarios .divComentarios article blockquote {
+  font-size: 18px;
+}
+section.SectionComentarios .divComentarios article footer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 * {
@@ -74,7 +184,12 @@ h1 {
 
 header {
   display: flex;
+  position: static;
+  z-index: 10;
+  height: 10vh;
   justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
 }
 header nav {
   display: flex;
@@ -87,9 +202,15 @@ header nav ul {
   list-style: none;
   font-size: 18px;
 }
+header nav ul li {
+  transition: 1s;
+}
 header nav ul li a {
   text-decoration: none;
   color: #000000;
+}
+header nav ul li:hover {
+  transform: translateX(10) scale(1.2);
 }
 
 section.seccao {
@@ -105,4 +226,9 @@ section.seccao {
   background-color: #FFA600;
   padding: 15px;
   border-radius: 30px;
+  transition: 1s;
+}
+
+#butVoltar:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */

@@ -1,51 +1,57 @@
-
+@use "index" as v;
 @use "hero";
-@use "variaveis";
+@use "sobre";
+@use "parceiros";
+@use "comentarios";
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'arial';
-
 }
 
-$cor_principal: #FFA600;
-$cor_secundaria: #000000;
-$cor_terceira: #303030;
 
 
-p{
-    color: $cor_terceira;
+p {
+    color: v.$cor_terceira;
     font-size: 22px;
 }
 
-h1{
+h1 {
     color: white;
     font-size: 64;
     text-align: center;
 }
 
 
-header{
+header {
     display: flex;
     position: static;
     z-index: 10;
     height: 10vh;
     justify-content: space-between;
-    nav{
+    align-items: center;
+    padding: 0px 10px;
+
+    nav {
         display: flex;
         align-items: center;
         justify-items: center;
 
-        ul{
+        ul {
             display: flex;
             gap: 20px;
             list-style: none;
             font-size: 18px;
-            li{
-                a{
+
+            li {
+                a {
                     text-decoration: none;
-                    color: $cor_secundaria;
+                    color: v.$cor_secundaria;
+                }
+                transition: 1s;
+                &:hover {
+                    transform: translateX(10) scale(1.2);
                 }
             }
         }
@@ -53,19 +59,23 @@ header{
 }
 
 
-section.seccao{
+section.seccao {
     height: 90vh;
-    
 }
 
 
-#butVoltar{
+#butVoltar {
     position: fixed;
     right: 10px;
     bottom: 10px;
     text-decoration: none;
     color: aliceblue;
-    background-color: #FFA600;
+    background-color: v.$cor_principal;
     padding: 15px;
     border-radius: 30px;
+    transition: 1s;
+}
+
+#butVoltar:hover {
+    transform: scale(1.2);
 }

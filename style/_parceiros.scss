@@ -1,0 +1,39 @@
+@use "index" as ui;
+
+
+
+section.SectionParceiros{
+    .textoParceiros{
+        text-align: center;
+    }
+    .imgParceiros{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .logoParceiros{
+            @include ui.center;
+            .imgLogosParceiros{
+                @include ui.center;
+                img{
+                    width: 150px;
+                }
+            }
+        }
+        .barnerParceiros{
+            @include ui.center; 
+            gap: 20px;                       
+            .imgBarnerParceiros{
+                img{
+                    width: 250px;
+                }
+            }
+        }
+
+
+    }
+    
+
+
+}
+
+

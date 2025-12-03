@@ -61,10 +61,11 @@
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
     <!-- Estilos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">
     {
@@ -144,24 +145,22 @@
                 </div>
 
             </section>
-            <section class="sobre">
-                <div class="sobreContent">
-                    <div class="textSobre">
-                        <h2>Sobre o FastMarket</h2>
-                        <p>O FastMarket é uma plataforma inovadora que conecta consumidores a uma ampla variedade de
-                            produtos
-                            de forma rápida e eficiente. Nossa missão é facilitar a experiência de compra, oferecendo
-                            conveniência e qualidade em um só lugar.</p>
-                    </div>
-                    <div class="imgSobre">
-                        <img src="/public/sobre.png" alt="Imagem ilustrativa sobre o FastMarket">
-                    </div>
+            <section class="sobre seccao">
+                <div class="textSobre">
+                    <h2 data-aos="fade-down-right">Sobre o FastMarket</h2>
+                    <p  data-aos="zoom-in">O FastMarket é uma plataforma inovadora que conecta consumidores a uma ampla variedade de
+                        produtos
+                        de forma rápida e eficiente. Nossa missão é facilitar a experiência de compra, oferecendo
+                        conveniência e qualidade em um só lugar.</p>
+                </div>
+                <div class="imgSobre">
+                    <img data-aos="fade-up-left" src="/public/sobre.png" alt="Imagem ilustrativa sobre o FastMarket">
                 </div>
             </section>
 
 
 
-            <section class="SectionParceiros">
+            <section class="SectionParceiros seccao">
                 <div class="textoParceiros">
                     <h2>Os nossos parceiros</h2>
                     <p>Go ahead and say just a little more about what you do.</p>
@@ -180,9 +179,6 @@
                         <div class="imgLogosParceiros">
                             <img src="/public/logoJimmys.png" alt="">
                         </div>
-
-
-
                     </div>
                     <div class="barnerParceiros">
                         <div class="imgBarnerParceiros">
@@ -203,7 +199,7 @@
             </section>
 
 
-            <section class="SectionComentarios">
+            <section class="SectionComentarios seccao">
                 <div class="textoParceiros">
                     <h2>Comentarios</h2>
                     <p>O que as pessoas dizem sobre os nossos serviços</p>
@@ -214,7 +210,7 @@
                             In the garden of life, some things are just very sweet. This is one of them.
                         </blockquote>
                         <footer>
-                            <img src="" alt="">
+                            <img src="public/user1.png" alt="avatar de um comentador" loading="lazy">
                             <cite>Samuel Massinga</cite>
                         </footer>
                     </article>
@@ -224,15 +220,18 @@
                             Your expectations will fly sky high. I felt like I was soaring.
                         </blockquote>
                         <footer>
-
+                            <img src="public/user2.png" alt="avatar de um comentador" loading="lazy">
                             <cite>Leonel Chiale</cite>
                         </footer>
                     </article>
+
+
                     <article class="comentario">
                         <blockquote>
                             Your expectations will fly sky high. I felt like I was soaring.
                         </blockquote>
                         <footer>
+                            <img src="public/user3.png" alt="avatar de um comentador" loading="lazy">
                             <cite>Ester Melina</cite>
                         </footer>
                     </article>
@@ -253,5 +252,7 @@
     </div>
 </body>
 <script src="script/script.js"></script>
-
+<script>
+  AOS.init();
+</script>
 </html>
