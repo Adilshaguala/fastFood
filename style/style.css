@@ -1,0 +1,122 @@
+<<<<<<< HEAD
+.hero {
+  background-image: url("/public/_hero.png");
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  color: white;
+}
+.hero .redesSociais ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.hero .redesSociais ul li {
+  list-style: none;
+}
+.hero .redesSociais ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 48px;
+}
+.hero .textHero {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+.hero .textHero h1 {
+  font-size: 56px;
+}
+.hero .textHero .heroLink {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.hero .textHero .heroLinkCriar {
+  background-color: #FFA600;
+  color: white;
+  padding: 10px;
+}
+.hero .textHero .heroLinkEntrar {
+  border: white 2px solid;
+  color: #FFA600;
+  padding: 10px;
+}
+.hero .textHero .heroButoes {
+  display: flex;
+  gap: 15px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "arial";
+}
+
+p {
+  color: #303030;
+  font-size: 22px;
+}
+
+h1 {
+  color: white;
+  font-size: 64;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 18px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+section.seccao {
+  height: 90vh;
+}
+
+#butVoltar {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: #FFA600;
+  padding: 15px;
+  border-radius: 30px;
+}/*# sourceMappingURL=style.css.map */
+=======
+@charset "UTF-8"; /* Caso uses seletores com elementos especiais! */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#app{
+    
+}
+>>>>>>> 462f6bb4dd02047cffd6b024270bfdf57b8357e7

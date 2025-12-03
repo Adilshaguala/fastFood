@@ -1,0 +1,71 @@
+
+@use "hero";
+@use "variaveis";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'arial';
+
+}
+
+$cor_principal: #FFA600;
+$cor_secundaria: #000000;
+$cor_terceira: #303030;
+
+
+p{
+    color: $cor_terceira;
+    font-size: 22px;
+}
+
+h1{
+    color: white;
+    font-size: 64;
+    text-align: center;
+}
+
+
+header{
+    display: flex;
+    position: static;
+    z-index: 10;
+    height: 10vh;
+    justify-content: space-between;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+
+        ul{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            font-size: 18px;
+            li{
+                a{
+                    text-decoration: none;
+                    color: $cor_secundaria;
+                }
+            }
+        }
+    }
+}
+
+
+section.seccao{
+    height: 90vh;
+    
+}
+
+
+#butVoltar{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #FFA600;
+    padding: 15px;
+    border-radius: 30px;
+}
